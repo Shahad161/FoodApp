@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FoodApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.FoodApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/brand_color</item>
         <item name="colorOnPrimary">@color/background_color</item>
