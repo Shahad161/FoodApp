@@ -1,10 +1,10 @@
-package com.example.foodapp.base
+package com.example.foodapp.ui.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.*
 import com.example.foodapp.BR
-import com.example.foodapp.main.MainActivityViewModel
+import com.example.foodapp.ui.main.MainActivityViewModel
 
 abstract class BaseActivity<VDB : ViewDataBinding>: AppCompatActivity(){
 

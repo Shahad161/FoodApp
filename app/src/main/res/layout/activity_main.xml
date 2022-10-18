@@ -6,14 +6,14 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.foodapp.main.MainActivityViewModel" />
+            type="com.example.foodapp.ui.main.MainActivityViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/background_color"
-        tools:context=".main.MainActivity">
+        tools:context=".ui.main.MainActivity">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appbar"

@@ -2,9 +2,10 @@ package com.example.foodapp.data
 
 import com.example.foodapp.BuildConfig
 import okhttp3.*
+import javax.inject.Inject
 
 
-class AuthInterceptor : Interceptor {
+class AuthInterceptor @Inject constructor() : Interceptor {
 
     private val apikey = BuildConfig.API_KEY
     override fun intercept(chain: Interceptor.Chain): Response {

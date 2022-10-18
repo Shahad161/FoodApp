@@ -1,13 +1,15 @@
-package com.example.foodapp.main
+package com.example.foodapp.ui.main
 
 import androidx.activity.viewModels
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.foodapp.R
-import com.example.foodapp.base.BaseActivity
+import com.example.foodapp.ui.base.BaseActivity
 import com.example.foodapp.databinding.ActivityMainBinding
 import com.example.foodapp.util.bindingAdapter.setVisibility
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     override fun getLayoutID(): Int = R.layout.activity_main

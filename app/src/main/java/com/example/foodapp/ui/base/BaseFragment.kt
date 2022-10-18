@@ -1,11 +1,11 @@
-package com.example.foodapp.base
+package com.example.foodapp.ui.base
 
 import android.os.Bundle
 import android.view.*
 import androidx.databinding.*
 import androidx.fragment.app.Fragment
 import com.example.foodapp.BR
-import com.example.foodapp.main.MainActivity
+import com.example.foodapp.ui.main.MainActivity
 
 abstract class BaseFragment<VDB : ViewDataBinding> : Fragment() {
 
