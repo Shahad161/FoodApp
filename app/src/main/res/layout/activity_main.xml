@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <variable
             name="viewModel"
-            type="com.example.foodapp.ui.main.MainActivityViewModel" />
+            type="com.example.foodapp.ui.main.MainActivityViewModel"
+            />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,15 +22,17 @@
             android:id="@+id/appbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:title="@string/app_name"
                 android:background="@color/tool_bar_color"
                 app:menu="@menu/top_app_bar"
+                app:title="@string/app_name"
                 />
 
         </com.google.android.material.appbar.AppBarLayout>
@@ -50,11 +55,13 @@
             android:id="@+id/navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/bottom_nav_menu"
-            app:labelVisibilityMode="selected"
-            app:itemRippleColor="@color/brand_color"
             app:backgroundTint="@color/card_background_color"
+            app:itemRippleColor="@color/brand_color"
+            app:labelVisibilityMode="selected"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu"
             />
 
 

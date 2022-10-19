@@ -1,6 +1,5 @@
 package com.example.foodapp.data.repository
 
-import android.util.Log
 import retrofit2.Response
 
 abstract class BaseRepository {
@@ -13,4 +12,5 @@ abstract class BaseRepository {
             throw Throwable("response is not successful")
         }
     }
+
 }

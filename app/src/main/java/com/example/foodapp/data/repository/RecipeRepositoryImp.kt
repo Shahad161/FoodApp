@@ -17,4 +17,4 @@ class RecipeRepositoryImp @Inject constructor(
         return wrap {recipeService.getRandomRecipes()}
     }
 
-  }
+}
