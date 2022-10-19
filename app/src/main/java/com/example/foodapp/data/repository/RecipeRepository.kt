@@ -6,6 +6,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface RecipeRepository {
 
-    suspend fun getRecipes(): Flow<UIState<Recipes?>>
+    suspend fun getRecipes(): Recipes
 
 }

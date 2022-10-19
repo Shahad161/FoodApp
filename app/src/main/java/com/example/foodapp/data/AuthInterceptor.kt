@@ -1,9 +1,9 @@
 package com.example.foodapp.data
 
+import android.util.Log
 import com.example.foodapp.BuildConfig
 import okhttp3.*
 import javax.inject.Inject
-
 
 class AuthInterceptor @Inject constructor() : Interceptor {
 
@@ -16,6 +16,7 @@ class AuthInterceptor @Inject constructor() : Interceptor {
     }
 
     companion object {
-        private const val API_KEY_PARAMETER = "api_key"
+        private const val API_KEY_PARAMETER = "apiKey"
     }
+
 }

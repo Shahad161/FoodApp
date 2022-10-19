@@ -8,9 +8,8 @@ abstract class BaseRepository {
     protected suspend fun <T> wrap(function: suspend () -> Response<T>): T {
         val response = function()
         return if (response.isSuccessful) {
-            response.body()!!
+            response.body() ?: throw Throwable()
         } else {
-            Log.i("aaa", response.body().toString())
             throw Throwable("response is not successful")
         }
     }
